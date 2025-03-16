@@ -5,21 +5,21 @@
 class Rconf < Formula
   desc "Execute multiple shell scripts on multiple remote hosts via SSH"
   homepage "https://github.com/hashmap-kz/homebrew-tap"
-  version "1.0.5"
+  version "1.0.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hashmap-kz/rconf/releases/download/v1.0.5/rconf_v1.0.5_darwin_amd64.tar.gz"
-      sha256 "050d60d9275d95c93704ef179042087c1f5f6253434ab9216a5fec4324dac1eb"
+      url "https://github.com/hashmap-kz/rconf/releases/download/v1.0.6/rconf_v1.0.6_darwin_amd64.tar.gz"
+      sha256 "d2511464069fe9322f841af819c6675edea61f18dc7c847ec2f9ca4e81f46c98"
 
       def install
         bin.install "rconf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hashmap-kz/rconf/releases/download/v1.0.5/rconf_v1.0.5_darwin_arm64.tar.gz"
-      sha256 "3ebb31d1d9e2a570a4f3c103621e463365fbe11e506501a0ecb893728637fe08"
+      url "https://github.com/hashmap-kz/rconf/releases/download/v1.0.6/rconf_v1.0.6_darwin_arm64.tar.gz"
+      sha256 "355ad1b90a88bedafac5cd7ec30034f3d50089f6bd5b6314a6e5457b789ee961"
 
       def install
         bin.install "rconf"
@@ -30,8 +30,8 @@ class Rconf < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hashmap-kz/rconf/releases/download/v1.0.5/rconf_v1.0.5_linux_amd64.tar.gz"
-        sha256 "de0341a49f1aa5c0e727e5f51b8e1d328300af45a9a3b777c59916a4e79e99e3"
+        url "https://github.com/hashmap-kz/rconf/releases/download/v1.0.6/rconf_v1.0.6_linux_amd64.tar.gz"
+        sha256 "d4854b975b1905b8c95316ac3bdcdebc1ab8190c33eacda37f0872a7c54453e2"
 
         def install
           bin.install "rconf"
@@ -40,8 +40,8 @@ class Rconf < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hashmap-kz/rconf/releases/download/v1.0.5/rconf_v1.0.5_linux_arm64.tar.gz"
-        sha256 "fb39e3d057d6bac58b0ceadbcacbc847e4843c30d3cbc518ecd0d68bd93a757b"
+        url "https://github.com/hashmap-kz/rconf/releases/download/v1.0.6/rconf_v1.0.6_linux_arm64.tar.gz"
+        sha256 "14dd34accbe2d33e291cb1a112344cde66a8e8a5eac5ffb877e9e0e8ff899d58"
 
         def install
           bin.install "rconf"
