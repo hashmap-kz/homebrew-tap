@@ -5,21 +5,21 @@
 class PgdumpEach < Formula
   desc "PostgreSQL version upgrade assistant"
   homepage "https://github.com/hashmap-kz/homebrew-tap"
-  version "1.0.17"
+  version "1.0.18"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hashmap-kz/pgdump-each/releases/download/v1.0.17/pgdump-each_v1.0.17_darwin_amd64.tar.gz"
-      sha256 "ff851f473cf7d1ec620b551b408043b5040eccf48ad92ad01165ad2b36cad500"
+      url "https://github.com/hashmap-kz/pgdump-each/releases/download/v1.0.18/pgdump-each_v1.0.18_darwin_amd64.tar.gz"
+      sha256 "2234dec69e51c4ebed446a5c2b05c3b71af0292f993b26b751caf85c866f0d14"
 
       def install
         bin.install "pgdump-each"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hashmap-kz/pgdump-each/releases/download/v1.0.17/pgdump-each_v1.0.17_darwin_arm64.tar.gz"
-      sha256 "bf8d9e53158cbb1001291d4b8eaf9b20302b6992673e55f45107088aa96b0541"
+      url "https://github.com/hashmap-kz/pgdump-each/releases/download/v1.0.18/pgdump-each_v1.0.18_darwin_arm64.tar.gz"
+      sha256 "da0bbe61379f5540bfbc095d340ad3c120024e4ef7d3111e2ac5e7dbbf05d386"
 
       def install
         bin.install "pgdump-each"
@@ -30,8 +30,8 @@ class PgdumpEach < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hashmap-kz/pgdump-each/releases/download/v1.0.17/pgdump-each_v1.0.17_linux_amd64.tar.gz"
-        sha256 "22ce6a14e86f9f19ac71b0eca460be3b2be8ef5dc9589bee09b1d4db0a9b01c6"
+        url "https://github.com/hashmap-kz/pgdump-each/releases/download/v1.0.18/pgdump-each_v1.0.18_linux_amd64.tar.gz"
+        sha256 "7a60506bb9836eaaa77902a5edba8013282b48cb7680dc19a20b0b66c7f5bb43"
 
         def install
           bin.install "pgdump-each"
@@ -40,8 +40,8 @@ class PgdumpEach < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hashmap-kz/pgdump-each/releases/download/v1.0.17/pgdump-each_v1.0.17_linux_arm64.tar.gz"
-        sha256 "ec7104a9f4437fb7296d3503c6b343ec4147e7bd90e7cddcc798df8b15a52f8d"
+        url "https://github.com/hashmap-kz/pgdump-each/releases/download/v1.0.18/pgdump-each_v1.0.18_linux_arm64.tar.gz"
+        sha256 "113cbb6c948e58be03e5610b852c92a844b88d57df3fbb1bcc05d855be088a1e"
 
         def install
           bin.install "pgdump-each"
