@@ -5,21 +5,21 @@
 class Relimpact < Formula
   desc "Release Impact Analyzer for Go projects"
   homepage "https://github.com/hashmap-kz/homebrew-tap"
-  version "0.0.5"
+  version "0.0.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hashmap-kz/relimpact/releases/download/v0.0.5/relimpact_v0.0.5_darwin_amd64.tar.gz"
-      sha256 "9b4f10b88f5233110dfcfa0f1c5bb819137c7f81e1c99e5c042a01f5848b36c2"
+      url "https://github.com/hashmap-kz/relimpact/releases/download/v0.0.6/relimpact_v0.0.6_darwin_amd64.tar.gz"
+      sha256 "87ff99b16b2d526dcd4cd1923ca01dd3a233d8f22cedd477e6ca0134e468cd43"
 
       def install
         bin.install "relimpact"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hashmap-kz/relimpact/releases/download/v0.0.5/relimpact_v0.0.5_darwin_arm64.tar.gz"
-      sha256 "ffb843cee751d33f87219d9e5970e62e8f4a704f9ed51afd7cecfc5add4dfa87"
+      url "https://github.com/hashmap-kz/relimpact/releases/download/v0.0.6/relimpact_v0.0.6_darwin_arm64.tar.gz"
+      sha256 "18b339ffdd957bf0891180c2344e3b9ae4fc16530853e6dcf11103b4bfa3e94e"
 
       def install
         bin.install "relimpact"
@@ -29,15 +29,15 @@ class Relimpact < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/relimpact/releases/download/v0.0.5/relimpact_v0.0.5_linux_amd64.tar.gz"
-      sha256 "6f9b36fe6b553dea7ccd420068ba82e043bf4ef5e664d8e22f0d328a3dbcf2d9"
+      url "https://github.com/hashmap-kz/relimpact/releases/download/v0.0.6/relimpact_v0.0.6_linux_amd64.tar.gz"
+      sha256 "1c6a45fffa0c0862fa4a6f8e025b63505c8d4af7a652ce87bf644edeebbb29ec"
       def install
         bin.install "relimpact"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/relimpact/releases/download/v0.0.5/relimpact_v0.0.5_linux_arm64.tar.gz"
-      sha256 "89e5f00843db41220ee765eee0b03b438360f10bc5377b7e7603c6ad9a3b1037"
+      url "https://github.com/hashmap-kz/relimpact/releases/download/v0.0.6/relimpact_v0.0.6_linux_arm64.tar.gz"
+      sha256 "14df6b197d6079f82a3d1b2fa5ff224a2c082d2d4b8706b17f2d080b0123dfc3"
       def install
         bin.install "relimpact"
       end
