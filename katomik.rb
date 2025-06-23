@@ -5,21 +5,21 @@
 class Katomik < Formula
   desc "Atomic apply of multiple Kubernetes manifests with rollback on failure."
   homepage "https://github.com/hashmap-kz/homebrew-tap"
-  version "1.0.3"
+  version "1.0.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hashmap-kz/katomik/releases/download/v1.0.3/katomik_v1.0.3_darwin_amd64.tar.gz"
-      sha256 "87188b32fed13bc586069f78cbf07fb934bf3cab200f4db2492e60868b5efd49"
+      url "https://github.com/hashmap-kz/katomik/releases/download/v1.0.4/katomik_v1.0.4_darwin_amd64.tar.gz"
+      sha256 "a237add6b5002e7f007ab8de3e49ea641a9131fdedb1ed58dd0cd1d3651d974d"
 
       def install
         bin.install "katomik"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hashmap-kz/katomik/releases/download/v1.0.3/katomik_v1.0.3_darwin_arm64.tar.gz"
-      sha256 "662f82b5afadbc52b6dea19e3a962b940063940aebe75b12aec0ab15062a8141"
+      url "https://github.com/hashmap-kz/katomik/releases/download/v1.0.4/katomik_v1.0.4_darwin_arm64.tar.gz"
+      sha256 "c77e66774a20e0de1d4b565f5ed2e5ea8219f7b4825217829bb8b6fbe7c4b2f7"
 
       def install
         bin.install "katomik"
@@ -29,15 +29,15 @@ class Katomik < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/katomik/releases/download/v1.0.3/katomik_v1.0.3_linux_amd64.tar.gz"
-      sha256 "ac3690ac1e66416fb40f16ed56e0ce3db6de9524e40b32ea7915c511ba7f197e"
+      url "https://github.com/hashmap-kz/katomik/releases/download/v1.0.4/katomik_v1.0.4_linux_amd64.tar.gz"
+      sha256 "f692de2ce912efabef0169dbe3b9c0f5463426225af110f5ee44861b20abf4a3"
       def install
         bin.install "katomik"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/katomik/releases/download/v1.0.3/katomik_v1.0.3_linux_arm64.tar.gz"
-      sha256 "09cdc60e7a3bd23196ce91443e6e1319ad4269f649e214642f699d99937868e7"
+      url "https://github.com/hashmap-kz/katomik/releases/download/v1.0.4/katomik_v1.0.4_linux_arm64.tar.gz"
+      sha256 "7b3455ea64d9b7f9e60e00e2c32fe44fc625012492245eb054f9c0aee1b7cb71"
       def install
         bin.install "katomik"
       end
