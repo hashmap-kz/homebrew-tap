@@ -5,21 +5,21 @@
 class CiTemplate < Formula
   desc "ci-template"
   homepage "https://github.com/hashmap-kz/homebrew-tap"
-  version "1.0.21"
+  version "1.0.22"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hashmap-kz/ci-template/releases/download/v1.0.21/ci-template_v1.0.21_darwin_amd64.tar.gz"
-      sha256 "afdd0c35831f7cf925b74b744195fdc8b095b16039ebad60ee1e19808aa300d2"
+      url "https://github.com/hashmap-kz/ci-template/releases/download/v1.0.22/ci-template_v1.0.22_darwin_amd64.tar.gz"
+      sha256 "05a737742207344302554439572223edff851f4d3a68e1d1a62b67bb249d9336"
 
       def install
         bin.install "ci-template"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hashmap-kz/ci-template/releases/download/v1.0.21/ci-template_v1.0.21_darwin_arm64.tar.gz"
-      sha256 "a4d94fcacf53d318e56f2ef093ed92ea56595cd450063e25623989e578755dcf"
+      url "https://github.com/hashmap-kz/ci-template/releases/download/v1.0.22/ci-template_v1.0.22_darwin_arm64.tar.gz"
+      sha256 "892f060535fd1e684050203549a36bb2d0cd529a2750851adb8f3308d8a508e3"
 
       def install
         bin.install "ci-template"
@@ -29,15 +29,15 @@ class CiTemplate < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/ci-template/releases/download/v1.0.21/ci-template_v1.0.21_linux_amd64.tar.gz"
-      sha256 "55fc1e3277cf30134f573314bc29aa502ba150e20d8f5313c41658cbc3bbae5b"
+      url "https://github.com/hashmap-kz/ci-template/releases/download/v1.0.22/ci-template_v1.0.22_linux_amd64.tar.gz"
+      sha256 "c2b9f939eea36e760fc75494e6811a4e408ef1bc5cecbfadc5f0c73446e05bfa"
       def install
         bin.install "ci-template"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/ci-template/releases/download/v1.0.21/ci-template_v1.0.21_linux_arm64.tar.gz"
-      sha256 "a4be704c946868c4b8101ad91c49585995c29ef082d5b6d549ad107c4c887457"
+      url "https://github.com/hashmap-kz/ci-template/releases/download/v1.0.22/ci-template_v1.0.22_linux_arm64.tar.gz"
+      sha256 "468f97bdd19e40473271927b8c7bd55be307150fbb9e24eb69dbd08759601be2"
       def install
         bin.install "ci-template"
       end
