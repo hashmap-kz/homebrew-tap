@@ -5,21 +5,21 @@
 class Godedup < Formula
   desc "Find structurally duplicate functions in Go code"
   homepage "https://github.com/hashmap-kz/homebrew-tap"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hashmap-kz/godedup/releases/download/v1.0.2/godedup_v1.0.2_darwin_amd64.tar.gz"
-      sha256 "af343fbe2e8d8c328c520768f24cd8b9106b606bb41db6a8c164a08d5de293a6"
+      url "https://github.com/hashmap-kz/godedup/releases/download/v1.0.3/godedup_v1.0.3_darwin_amd64.tar.gz"
+      sha256 "ae2c58d06fa3ae042310414343f55c447ada15f152e1afc5db69067b4068d190"
 
       define_method(:install) do
         bin.install "godedup"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hashmap-kz/godedup/releases/download/v1.0.2/godedup_v1.0.2_darwin_arm64.tar.gz"
-      sha256 "868f65ed2dcd2289f76b1098e571b145e2d17accd04dc43b3160610259ae359f"
+      url "https://github.com/hashmap-kz/godedup/releases/download/v1.0.3/godedup_v1.0.3_darwin_arm64.tar.gz"
+      sha256 "100c5fa6b152e9c1f2f363655f1fb3dd7d6b1b731f27e13305722686933445c5"
 
       define_method(:install) do
         bin.install "godedup"
@@ -29,15 +29,15 @@ class Godedup < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/godedup/releases/download/v1.0.2/godedup_v1.0.2_linux_amd64.tar.gz"
-      sha256 "66c0cc324bab42356d6b3ac345e479f5b181e96de07732ea3d846bce19da2c34"
+      url "https://github.com/hashmap-kz/godedup/releases/download/v1.0.3/godedup_v1.0.3_linux_amd64.tar.gz"
+      sha256 "372a9d8cbc47a2679ce7a91773cea502c6ecdc096ebfd5292326f5cb7182186d"
       define_method(:install) do
         bin.install "godedup"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/godedup/releases/download/v1.0.2/godedup_v1.0.2_linux_arm64.tar.gz"
-      sha256 "12b2ca90520a1526d77f61a9fd077b228b02e220b742b12f65ccb09e74940671"
+      url "https://github.com/hashmap-kz/godedup/releases/download/v1.0.3/godedup_v1.0.3_linux_arm64.tar.gz"
+      sha256 "7f3894c763ae1298a4c263a7f6978112b3da6030c5c93a56063d375b179c0410"
       define_method(:install) do
         bin.install "godedup"
       end
