@@ -5,21 +5,21 @@
 class Gofromdb < Formula
   desc "Find structurally duplicate functions in Go code"
   homepage "https://github.com/hashmap-kz/homebrew-tap"
-  version "1.0.12"
+  version "1.0.14"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hashmap-kz/gofromdb/releases/download/v1.0.12/gofromdb_v1.0.12_darwin_amd64.tar.gz"
-      sha256 "87ad5303ab5b368a8e757401325a8c9f3220b8dea8e32301077dfd5b5fa9bd72"
+      url "https://github.com/hashmap-kz/gofromdb/releases/download/v1.0.14/gofromdb_v1.0.14_darwin_amd64.tar.gz"
+      sha256 "252cbce2df5393233d433a8e1d88c9bffc1b6fe661046032314da66e6c31794d"
 
       define_method(:install) do
         bin.install "gofromdb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hashmap-kz/gofromdb/releases/download/v1.0.12/gofromdb_v1.0.12_darwin_arm64.tar.gz"
-      sha256 "7cb1f9faf71e9089344dce3934963021c0c10c433f77af5051060d3039a091a0"
+      url "https://github.com/hashmap-kz/gofromdb/releases/download/v1.0.14/gofromdb_v1.0.14_darwin_arm64.tar.gz"
+      sha256 "44a78e1cd4b281a0938547438a51af171b4a45250b9485f73f28d1e2b3206afb"
 
       define_method(:install) do
         bin.install "gofromdb"
@@ -29,15 +29,15 @@ class Gofromdb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/gofromdb/releases/download/v1.0.12/gofromdb_v1.0.12_linux_amd64.tar.gz"
-      sha256 "f7dcf479ca200c34fb45c44e5b3456aadd438d79bfe2c59d822f3a9ecef46e75"
+      url "https://github.com/hashmap-kz/gofromdb/releases/download/v1.0.14/gofromdb_v1.0.14_linux_amd64.tar.gz"
+      sha256 "a1e5b26d146754bfbfd35445e24486459b3f4e697f23746b156b003215df1ce6"
       define_method(:install) do
         bin.install "gofromdb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/gofromdb/releases/download/v1.0.12/gofromdb_v1.0.12_linux_arm64.tar.gz"
-      sha256 "76eb62f97b453ae5c74cd4337301c04e630ffc5445762a6bde04150fd8ec8dd8"
+      url "https://github.com/hashmap-kz/gofromdb/releases/download/v1.0.14/gofromdb_v1.0.14_linux_arm64.tar.gz"
+      sha256 "a34f4e13721480e8e1dad320a9436e22943fb530bbb233e9236f2e479668dcbc"
       define_method(:install) do
         bin.install "gofromdb"
       end
