@@ -5,21 +5,21 @@
 class Smallci < Formula
   desc "A minimal local CI runner"
   homepage "https://github.com/hashmap-kz/homebrew-tap"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hashmap-kz/smallci/releases/download/v1.0.3/smallci_v1.0.3_darwin_amd64.tar.gz"
-      sha256 "683c2b7bdc88597b05de53d05c58acf350ffc380f4005850fd24e87c1cc5806e"
+      url "https://github.com/hashmap-kz/smallci/releases/download/v1.0.4/smallci_v1.0.4_darwin_amd64.tar.gz"
+      sha256 "9cc10b261b18cfa2d97ba64a44a1c9015bf51faec97d40f0355890391abd1e87"
 
       define_method(:install) do
         bin.install "smallci"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hashmap-kz/smallci/releases/download/v1.0.3/smallci_v1.0.3_darwin_arm64.tar.gz"
-      sha256 "c3084657d5741fa44dc1aa16413e18e6adcb51a71030fa2baf75b57e9ee3e5b4"
+      url "https://github.com/hashmap-kz/smallci/releases/download/v1.0.4/smallci_v1.0.4_darwin_arm64.tar.gz"
+      sha256 "d2f033c12c354d438e848d60b06425e896d683c999b330c77d2d5d1098ab4082"
 
       define_method(:install) do
         bin.install "smallci"
@@ -29,15 +29,15 @@ class Smallci < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/smallci/releases/download/v1.0.3/smallci_v1.0.3_linux_amd64.tar.gz"
-      sha256 "5da727b7adda1537795cbebc8cdbfa104b69dffab0f032329553bb63ceeaf875"
+      url "https://github.com/hashmap-kz/smallci/releases/download/v1.0.4/smallci_v1.0.4_linux_amd64.tar.gz"
+      sha256 "a026f32095c7c1af3abd2e1016545679528430a476ca1e50163d9ccb845eb956"
       define_method(:install) do
         bin.install "smallci"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/smallci/releases/download/v1.0.3/smallci_v1.0.3_linux_arm64.tar.gz"
-      sha256 "0df8fc1c8208a306626c1337b4d6d631f5cad45e8244a2376da83969f3cb602d"
+      url "https://github.com/hashmap-kz/smallci/releases/download/v1.0.4/smallci_v1.0.4_linux_arm64.tar.gz"
+      sha256 "de7731700a3871727ffa4c18c643dfb918ebecf3a09b29e2bacfb201483af82b"
       define_method(:install) do
         bin.install "smallci"
       end
