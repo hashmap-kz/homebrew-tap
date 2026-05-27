@@ -5,21 +5,21 @@
 class Pgsize < Formula
   desc "ncdu for postgres"
   homepage "https://github.com/hashmap-kz/homebrew-tap"
-  version "0.0.4"
+  version "0.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hashmap-kz/pgsize/releases/download/v0.0.4/pgsize_v0.0.4_darwin_amd64.tar.gz"
-      sha256 "358188d1d077478273c3e25796b7ec9ce2fab17338f050ad653e19c40ffaff58"
+      url "https://github.com/hashmap-kz/pgsize/releases/download/v0.0.5/pgsize_v0.0.5_darwin_amd64.tar.gz"
+      sha256 "2fbec330f2edad2ee17332410dd123e323fa654db11adf61e49d7514c818a0bd"
 
       define_method(:install) do
         bin.install "pgsize"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hashmap-kz/pgsize/releases/download/v0.0.4/pgsize_v0.0.4_darwin_arm64.tar.gz"
-      sha256 "999fd34e8f6e1b400290d87fb392053a6d7192679dd08d59da0a809e0f38ab14"
+      url "https://github.com/hashmap-kz/pgsize/releases/download/v0.0.5/pgsize_v0.0.5_darwin_arm64.tar.gz"
+      sha256 "fd404d75d2da8fc6688a3c346bc0cb60c564f770662671b1fa0c3807349978c8"
 
       define_method(:install) do
         bin.install "pgsize"
@@ -29,15 +29,15 @@ class Pgsize < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/pgsize/releases/download/v0.0.4/pgsize_v0.0.4_linux_amd64.tar.gz"
-      sha256 "77e3ac2c499ac660e2ed93e734143c1ad122e881d131669f43b4fcc8b561bb34"
+      url "https://github.com/hashmap-kz/pgsize/releases/download/v0.0.5/pgsize_v0.0.5_linux_amd64.tar.gz"
+      sha256 "4f32ff53f8f4da974b8cc699ca7bf2ffd9f0783f5fa85b0288562ed98460e68f"
       define_method(:install) do
         bin.install "pgsize"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/pgsize/releases/download/v0.0.4/pgsize_v0.0.4_linux_arm64.tar.gz"
-      sha256 "94796649f7b65db8b970fd3b3c900411d61e51cf24216765d53411f5c64b3ee5"
+      url "https://github.com/hashmap-kz/pgsize/releases/download/v0.0.5/pgsize_v0.0.5_linux_arm64.tar.gz"
+      sha256 "308b52c1eb382c5aa3cf8db88600d31dd396b6831c19d37ee197df4ff2c59282"
       define_method(:install) do
         bin.install "pgsize"
       end
