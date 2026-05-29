@@ -5,21 +5,21 @@
 class KubectlSyncpod < Formula
   desc "High-Speed File Transfer to and from PVCs"
   homepage "https://github.com/hashmap-kz/homebrew-tap"
-  version "1.0.5"
+  version "1.0.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hashmap-kz/kubectl-syncpod/releases/download/v1.0.5/kubectl-syncpod_v1.0.5_darwin_amd64.tar.gz"
-      sha256 "edfbaa42a9baa23de434b295e223ec4b716a80e39de21ca7579a87d37871df44"
+      url "https://github.com/hashmap-kz/kubectl-syncpod/releases/download/v1.0.6/kubectl-syncpod_v1.0.6_darwin_amd64.tar.gz"
+      sha256 "db7e8891d71cfcd7f46d17d996c130bbd6e62adf497513b1570cd0b84659691c"
 
       define_method(:install) do
         bin.install "kubectl-syncpod"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hashmap-kz/kubectl-syncpod/releases/download/v1.0.5/kubectl-syncpod_v1.0.5_darwin_arm64.tar.gz"
-      sha256 "41d61f711412088ac07ae17480c7d3b0adaae32c07eb13f6e42bbb85ca61869c"
+      url "https://github.com/hashmap-kz/kubectl-syncpod/releases/download/v1.0.6/kubectl-syncpod_v1.0.6_darwin_arm64.tar.gz"
+      sha256 "35c7df54ca9ddf455c7b15a83a8366fa9a34a650fa22d75d6f606ed795db3156"
 
       define_method(:install) do
         bin.install "kubectl-syncpod"
@@ -29,15 +29,15 @@ class KubectlSyncpod < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/kubectl-syncpod/releases/download/v1.0.5/kubectl-syncpod_v1.0.5_linux_amd64.tar.gz"
-      sha256 "6dc57d2d8d66f3747f45ed4f79258d045de643b2b73cf739e403b3ef85439038"
+      url "https://github.com/hashmap-kz/kubectl-syncpod/releases/download/v1.0.6/kubectl-syncpod_v1.0.6_linux_amd64.tar.gz"
+      sha256 "408991f603031488e878ce2782cd0794a90e795bcdf0afed2e61cd4ec96a1b3e"
       define_method(:install) do
         bin.install "kubectl-syncpod"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hashmap-kz/kubectl-syncpod/releases/download/v1.0.5/kubectl-syncpod_v1.0.5_linux_arm64.tar.gz"
-      sha256 "14908b2ce0850d1bc3146b2ab9760c56b3412067658c68f6164dcbb1c0ce9501"
+      url "https://github.com/hashmap-kz/kubectl-syncpod/releases/download/v1.0.6/kubectl-syncpod_v1.0.6_linux_arm64.tar.gz"
+      sha256 "3b622a3140b7451d229f6584b198490b3a867abf6ba02510a94841fe4500c526"
       define_method(:install) do
         bin.install "kubectl-syncpod"
       end
